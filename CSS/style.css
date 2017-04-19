@@ -4,11 +4,10 @@ margin: 0px;
 padding: 0px;
 }
 
-
 body {
 background-image: url(../img/background.jpg);
 }
-
+/* стилизация для горизонтальной блочной верстки */
 .string:after {
   visibility: hidden;
   display: block;
@@ -21,7 +20,9 @@ background-image: url(../img/background.jpg);
 
 * html .string { height: 1%; }
 .string { display: block; }
+/* _____________________________________________ */
 
+/* стилизация хедера */
 .header {
 margin-bottom: 10px;
 }
@@ -39,6 +40,33 @@ float: left;
 .menu {
 float: left;
 }
+
+.main-menu  { 
+padding-top: 19px;
+text-align: center;
+}
+
+.main-menu li {
+font-size: 20px;
+margin-left: 10px;
+margin-right: 10px;
+display: inline;
+}
+
+.main-menu li a {
+font-family: sans-serif;
+font-size: 20px;
+color: #c2bebd;
+font-weight: 400;
+}
+
+.main-menu li a:hover {
+font-size: 21px;
+color: #e815a3;
+}
+/* _____________________________________________ */
+
+/* стилизация контента */
 .content {
 width: 80%;
 float: left;
@@ -47,19 +75,23 @@ float: left;
 padding-top: 15px;
 min-height: 500px;
 }
+
 .column-1 {
-width: 50%;
+width: 65%;
 float: left;
 padding-right: 10px;
 padding-top: 15px;
-
 }
+
 .column-2 {
 padding-top: 15px;
-width: 50%;
+width: 35%;
 float: left;
 text-align: justify;
 }
+/* _____________________________________________ */
+
+/* стилизация сайдбара */
 .sidebar {
 float: left;
 width: 20%;
@@ -68,6 +100,9 @@ padding-left: 10px;
 .inner-sidebar {
 min-height: 500px;
 }
+/* _____________________________________________ */
+
+/* стилизация футера */
 .footer {
 position: fixed;
 left: 0;
@@ -83,60 +118,15 @@ color: #ffffff;
 padding-top: 10px;
 padding-left: 10px;
 }
-.main-menu  { 
-padding-top: 19px;
-text-align: center;
-}
+/* _____________________________________________ */
 
-.main-menu li a {
-font-family: sans-serif;
-font-size: 20px;
-color: #c2bebd;
-font-weight: 400;
-}
-
-.main-menu li a:hover {
-font-size: 21px;
-color: #e815a3;
-}
-
+/* Стилизация общих / отдельных элементов */
 a {
 text-decoration: none;
 }
 
-.main-menu li {
-font-size: 20px;
-margin-left: 10px;
-margin-right: 10px;
-display: inline;
-}
-
 h1, h2 {
 color: #ec15a3;
-}
-
-#girl1 {
-width: 100%;
-border-radius: 10px;
-}
-
-.product-1 {
-width: 33%;
-float: left;
-padding-right: 10px;
-padding-top: 15px;
-}
-.product-2 {
-width: 33%;
-float: left;
-padding-right: 10px;
-padding-top: 15px;
-}
-.product-3 {
-width: 33%;
-float: left;
-padding-right: 10px;
-padding-top: 15px;
 }
 
 h3 {
@@ -145,6 +135,53 @@ font-size: 18px;
 font-weight: 400;
 background-color: #eaeaea;
 }
+
+#girl1 {
+width: 100%;
+border-radius: 10px;
+}
+
+li {
+list-style: none;
+}
+/* _____________________________________________ */
+
+/* стилизация каталога */
+.product-1 {
+width: 33%;
+float: left;
+padding-right: 10px;
+padding-top: 15px;
+}
+
+.product-1 a {
+color: #ec15a3;
+}
+
+.product-2 {
+width: 33%;
+float: left;
+padding-right: 10px;
+padding-top: 15px;
+}
+
+.product-2 a {
+color: #ec15a3;
+}
+
+.product-3 {
+width: 33%;
+float: left;
+padding-right: 10px;
+padding-top: 15px;
+}
+
+.product-3 a {
+color: #ec15a3;
+}
+/* _____________________________________________ */
+
+/* стилизация внутренней страницы товара */
 .description-text {
 color: #707070;
 font-size: 16px;
@@ -159,38 +196,6 @@ line-height: 24px;
 text-align: left;
 }
 
-li {
-list-style: none;
-}
-
-input {
-width: 350px;
-height: 25px;
-margin-top: 5px;
-margin-bottom: 5px;
-border: 1.5px solid;
-border-radius: 3px;
-}
-input.textarea {
-height: 70px;
-}
-
-button {
-color: #ec15a3;
-background-color: white;
-font-weight: 800;
-text-decoration: none;
-padding: .6em 3em;
-outline: none;
-border: 4px solid;
-border-radius: 5px;
-margin-left: 255px;
-}
-
-button:hover {
-color: #D11390;
-}
-
 .catalog_img {
 float: left;
 
@@ -199,7 +204,80 @@ float: left;
 float: left;
 margin-left: 50px; 
 }
+table {
+border-collapse: collapse;
+}
+td {
+width: 100px;
+height: 40px;
+border: 2px solid;
+font-size: 0.8em;
+padding: 5px 7px;
+text-align: center;
+}
 
 .about {
 clear: left;
 }
+
+/* _____________________________________________ */
+
+/* стилизация обратной связи на стр контакты */
+.feedback {
+margin-left: 15px;
+}
+
+p.contact { 
+font-size: 18px; 
+margin-bottom: 10px; 
+line-height: 25px;  
+}
+
+input[type="text"] {
+width: 300px;
+height: 30px; 
+text-transform: capitalize;
+}
+ 
+textarea { 
+width: 300px; 
+height: 100px; 
+}
+ 
+label { 
+color: #ec15a3; 
+}
+ 
+input, textarea { 
+background-color: #fff; 
+border: 2px solid #a8a6a6; 
+padding: 5px; 
+color: red; 
+font-size: 14px; 
+border-radius: 5px;
+margin-bottom: 10px;
+margin-top: -10px;
+}
+ 
+input:focus, textarea:focus { 
+border: 4px solid #ec15a3; 
+background-color: rgba(255, 255, 255, 1);
+color: #ec15a3;
+}
+ 
+input[type="submit"] {
+ border-color: #ec15a3;
+ color: black;
+ margin-left: 213px;
+ margin-top: 10px;
+ }
+ 
+input[type="submit"]:hover {
+background-color: #ec15a3;
+color: #fff;
+}
+
+.adress {
+margin-left: 15px;
+}
+/* _____________________________________________ */
