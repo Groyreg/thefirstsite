@@ -1,5 +1,7 @@
 * {
 box-sizing: border-box;
+margin: 0px;
+padding: 0px;
 }
 
 
@@ -25,16 +27,24 @@ margin-bottom: 10px;
 }
 
 .inner-header {
-background:  #7f92b2;
-height: 150px;
+background:  #ffffff;
+height: 70px;
 }
-.inner-header h
-
+.inner-header h1 {
+padding: 10px;
+}
+.logo {
+float: left;
+}
+.menu {
+float: left;
+}
 .content {
 width: 80%;
 float: left;
 }
 .inner-content {
+padding-top: 15px;
 min-height: 500px;
 }
 .column-1 {
@@ -42,8 +52,10 @@ width: 50%;
 float: left;
 padding-right: 10px;
 padding-top: 15px;
+
 }
 .column-2 {
+padding-top: 15px;
 width: 50%;
 float: left;
 text-align: justify;
@@ -57,29 +69,35 @@ padding-left: 10px;
 min-height: 500px;
 }
 .footer {
-margin-top: 10px;
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
 }
 .inner-footer {
-background:  #7f92b2;
+background:  #3e4352;
 height: 150px;
 }
 .inner-footer p {
+color: #ffffff;
 padding-top: 10px;
 padding-left: 10px;
 }
-.main-menu  {
-background-color: #E5E6E1;
-border-radius: 15px;
+.main-menu  { 
+padding-top: 19px;
 text-align: center;
-margin: 20px 1px;
-padding: 25px 1px;
 }
 
 .main-menu li a {
 font-family: sans-serif;
 font-size: 20px;
-color: #e815a3;
+color: #c2bebd;
 font-weight: 400;
+}
+
+.main-menu li a:hover {
+font-size: 21px;
+color: #e815a3;
 }
 
 a {
@@ -100,6 +118,25 @@ color: #ec15a3;
 #girl1 {
 width: 100%;
 border-radius: 10px;
+}
+
+.product-1 {
+width: 33%;
+float: left;
+padding-right: 10px;
+padding-top: 15px;
+}
+.product-2 {
+width: 33%;
+float: left;
+padding-right: 10px;
+padding-top: 15px;
+}
+.product-3 {
+width: 33%;
+float: left;
+padding-right: 10px;
+padding-top: 15px;
 }
 
 h3 {
