@@ -35,10 +35,10 @@ height: 70px;
 padding: 10px;
 }
 .logo {
-float: left;
+float: right;
 }
 .menu {
-float: left;
+float: right;
 }
 
 .main-menu  { 
@@ -67,12 +67,14 @@ color: #e815a3;
 /* _____________________________________________ */
 
 /* стилизация контента */
-.content {
-width: 80%;
-float: left;
+.container {
+width: 100%;
+text-align: center;
 }
 .inner-content {
 padding-top: 15px;
+padding-left: 15px;
+padding-right: 15px;
 min-height: 500px;
 }
 
@@ -92,19 +94,11 @@ text-align: justify;
 /* _____________________________________________ */
 
 /* стилизация сайдбара */
-.sidebar {
-float: left;
-width: 20%;
-padding-left: 10px;
-}
-.inner-sidebar {
-min-height: 500px;
-}
+
 /* _____________________________________________ */
 
 /* стилизация футера */
 .footer {
-position: fixed;
 left: 0;
 bottom: 0;
 width: 100%;
@@ -117,6 +111,10 @@ height: 150px;
 color: #ffffff;
 padding-top: 10px;
 padding-left: 10px;
+}
+#footer {
+text-align: right;
+margin:10px 10px;
 }
 /* _____________________________________________ */
 
@@ -276,6 +274,10 @@ input[type="submit"]:hover {
 background-color: #ec15a3;
 color: #fff;
 }
+
+/* _____________________________________________ */
+
+/* стилизация карты на стр контакты */
 
 .adress {
 margin-left: 15px;
